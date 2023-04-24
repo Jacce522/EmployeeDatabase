@@ -25,7 +25,7 @@ public class EmployeeDatabase extends JFrame {
 	public static void createFrame()
 	{
 		
-    JFrame frame = new JFrame("Employee Registration");//information at the top of the window
+                JFrame frame = new JFrame("Employee Registration");//information at the top of the window
 		frame.setLayout(new FlowLayout());
 		
 		JPanel panel = new JPanel(new FlowLayout());
@@ -44,7 +44,7 @@ public class EmployeeDatabase extends JFrame {
 		firstName.setHorizontalAlignment(JLabel.LEFT);
 		JTextField textfield = new JTextField(10);
 		
-    panel.add(firstName);
+                panel.add(firstName);
 		panel.add(textfield);
 		
 		
@@ -74,7 +74,7 @@ public class EmployeeDatabase extends JFrame {
 		submitButton.addActionListener(e -> {
 			try {
 				
-        String url ="jdbc:mysql://localhost:3306/employees";
+                                String url ="jdbc:mysql://localhost:3306/employees";
 				String username = "root";
 				String password = ""; //removed password for security reasons
 				
@@ -93,8 +93,8 @@ public class EmployeeDatabase extends JFrame {
 				
 				
 			} 
-      catch (Exception e1) 
-      {
+                        catch (Exception e1) 
+                        {
 				e1.printStackTrace();
 			} 
 		});
@@ -128,8 +128,8 @@ public class EmployeeDatabase extends JFrame {
 			statement.execute();
 			System.out.println("Successfully entered into database"); 
 		} 
-    catch (SQLException e) 
-    {
+                catch (SQLException e) 
+                { 
 			
 			e.printStackTrace();
 		}
