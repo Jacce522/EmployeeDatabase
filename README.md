@@ -7,3 +7,7 @@ Java FX window created which has JLabels and JTextFields and JButtons which allo
 
 # Plans for future
 * Ability to have employee check to see if name already exists in database.
+
+# Pictures
+![](pictures/employeedatabase.png)
+![](pictures/employeedatabaseresults.png)
